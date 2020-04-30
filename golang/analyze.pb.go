@@ -40,7 +40,7 @@ func (m *AnalyzeApiRequest) Reset()         { *m = AnalyzeApiRequest{} }
 func (m *AnalyzeApiRequest) String() string { return proto.CompactTextString(m) }
 func (*AnalyzeApiRequest) ProtoMessage()    {}
 func (*AnalyzeApiRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{0}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{0}
 }
 func (m *AnalyzeApiRequest) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AnalyzeApiRequest.Unmarshal(m, b)
@@ -98,7 +98,7 @@ func (m *Recognizer) Reset()         { *m = Recognizer{} }
 func (m *Recognizer) String() string { return proto.CompactTextString(m) }
 func (*Recognizer) ProtoMessage()    {}
 func (*Recognizer) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{1}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{1}
 }
 func (m *Recognizer) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_Recognizer.Unmarshal(m, b)
@@ -154,7 +154,7 @@ func (m *AnalyzeRequest) Reset()         { *m = AnalyzeRequest{} }
 func (m *AnalyzeRequest) String() string { return proto.CompactTextString(m) }
 func (*AnalyzeRequest) ProtoMessage()    {}
 func (*AnalyzeRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{2}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{2}
 }
 func (m *AnalyzeRequest) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AnalyzeRequest.Unmarshal(m, b)
@@ -203,7 +203,7 @@ func (m *AnalyzeResponse) Reset()         { *m = AnalyzeResponse{} }
 func (m *AnalyzeResponse) String() string { return proto.CompactTextString(m) }
 func (*AnalyzeResponse) ProtoMessage()    {}
 func (*AnalyzeResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{3}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{3}
 }
 func (m *AnalyzeResponse) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_AnalyzeResponse.Unmarshal(m, b)
@@ -237,7 +237,7 @@ func (m *AnalyzeResponse) GetRequestId() string {
 	return ""
 }
 
-// RecognizersRequest represents the request to get the recognizers
+// RecognizersAllRequest represents the request to get the recognizers
 // known to the analyze service that support the input language via GRPC
 type RecognizersAllRequest struct {
 	// The supported language code, in ISO-639 format, https://en.wikipedia.org/wiki/ISO_639-1
@@ -251,7 +251,7 @@ func (m *RecognizersAllRequest) Reset()         { *m = RecognizersAllRequest{} }
 func (m *RecognizersAllRequest) String() string { return proto.CompactTextString(m) }
 func (*RecognizersAllRequest) ProtoMessage()    {}
 func (*RecognizersAllRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{4}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{4}
 }
 func (m *RecognizersAllRequest) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RecognizersAllRequest.Unmarshal(m, b)
@@ -291,7 +291,7 @@ func (m *RecognizersAllResponse) Reset()         { *m = RecognizersAllResponse{}
 func (m *RecognizersAllResponse) String() string { return proto.CompactTextString(m) }
 func (*RecognizersAllResponse) ProtoMessage()    {}
 func (*RecognizersAllResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor_analyze_5c83f6670f88ca2e, []int{5}
+	return fileDescriptor_analyze_63e16b22eca22a38, []int{5}
 }
 func (m *RecognizersAllResponse) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_RecognizersAllResponse.Unmarshal(m, b)
@@ -436,9 +436,9 @@ var _AnalyzeService_serviceDesc = grpc.ServiceDesc{
 	Metadata: "analyze.proto",
 }
 
-func init() { proto.RegisterFile("analyze.proto", fileDescriptor_analyze_5c83f6670f88ca2e) }
+func init() { proto.RegisterFile("analyze.proto", fileDescriptor_analyze_63e16b22eca22a38) }
 
-var fileDescriptor_analyze_5c83f6670f88ca2e = []byte{
+var fileDescriptor_analyze_63e16b22eca22a38 = []byte{
 	// 354 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x94, 0x93, 0x3f, 0x4f, 0xc2, 0x40,
 	0x18, 0xc6, 0x2d, 0x88, 0xb1, 0x2f, 0x0a, 0xe9, 0x45, 0x48, 0xd3, 0x60, 0xd2, 0x74, 0xea, 0x60,
